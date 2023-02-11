@@ -1,0 +1,64 @@
+ <!-- 1.css stand for the cascading style sheets 
+   2.css gives style to raw html
+   3.css is used to make website responsive
+   responsive means it works in every device
+   like laptop,mobile,tablet etc.
+   4.css is used to give style to our web pages
+   5.html is used to structure a website
+   6.css takes the responsibility to design*/
+
+   /* Syntax of css
+ selector means where to make changes
+     p(selector) { color(property): blue(value); }
+
+     to perform on a particular tag we use here the class and ids
+
+     header,p.intro(here mutiple classes can be given{
+         font-color: red;
+     }
+    -->
+
+ <!-- first three types of css adding are 
+1.Inline css(on a tag)
+2.Internal css(kept inside the head tags in <style> tags
+3.External css(an external file is added .css file to include in
+our markup(i.e html ) 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tutorials</title>
+    <link rel="stylesheet" href="tut13.css">
+    <style>
+        body{
+            background-color: hotpink;
+        }
+        p{
+            color: purple !important;
+            /* important which gives importance to a particular tag */
+        }
+        /* example of the internal css here */
+    </style>
+    <link rel="stylesheet" href="tut13.css">
+    <!-- if a css is written after then it takes the precedence
+     i.e which is written later in the file -->
+
+</head>
+<body>
+    <h2 style="color: blue; background-color: yellow;">this is the css tutorial</h2>
+    <!-- it is example of the inline css here and always more
+    priority is given to the inline css  -->
+    <p>it's too late in the night around 1:00 am still i am learning something that will 
+        eventually help me in the future
+    </p>
+
+    <h3>hello external css here</h3>
+</body>
+</html>
+
+
+

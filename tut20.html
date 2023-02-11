@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* here the box sizing helps in not getting affect the widht of the box as the margin and 
+            padding changes in the code */
+        }
+        body{
+            background-color: rgb(164, 154, 166); 
+        }
+     .container{
+         background-color: rgb(80, 103, 76);
+         border: 3px solid rgb(131, 124, 168);
+         padding: 90px;
+         /* the space between the inner content and
+         end of inner content box */
+         /* the space outside the border is the margin */
+         margin: 35px 40px;
+         /* padding-right: 30px 
+          padding- top: 30px 
+          padding-bottom: 30px 
+          padding-top: 30px 
+          we can set top bottom ,left ,right in padding as per the need and same can be done for margin */
+          padding: 23px 56px 6px 78px; /*padding/margin= top right botton left (can be learned using trbl)*/
+          /* padding: 34px 19px
+              padding: y(top/bottom ) x(left/right) when
+              two have same padding */
+               
+            border-radius: 25px;
+            /* width and height of the box can also be
+            given as per the need here
+            width: 20px;
+            height:30px */
+           
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <!-- ctrl+shift+f to format and beutify the 
+        written code in the vs code here -->
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, recusandae consectetur sunt et commodi incidunt quisquam assumenda voluptatibus exercitationem aliquid neque quasi culpa placeat.</p>
+        
+
+    </div>
+    <div class="container">
+        <h3>This is the second heading of the page</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, recusandae consectetur sunt et commodi incidunt quisquam assumenda voluptatibus exercitationem aliquid neque quasi culpa placeat.</p>
+        
+
+    </div>
+    <div class="container">
+        <h3>This is the third heading of the page</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, recusandae consectetur sunt et commodi incidunt quisquam assumenda voluptatibus exercitationem aliquid neque quasi culpa placeat.</p>
+        
+
+    </div>
+    
+</body>
+</html>

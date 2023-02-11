@@ -1,0 +1,74 @@
+<!-- SELECTORS 
+  1.css selectors are used to find the element whose property
+will be set
+2.selectors are used to target the html elements 
+3. Selectors makes it easy for us to easily target
+single/mutilple HTML elements in the markup -->
+
+
+<!--There are four types of the css selectors
+1. CSS element selector
+2.css id selector
+3. css class selector
+4. The css grouping selector  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+     #redelement{
+        color: red;
+     }
+     .bgblue
+     {
+         background-color: blue;;
+     }
+     #greenelement{
+         color: green;
+         /* id selectors */
+     }
+     .bgyellow{
+         background-color: yellow;
+         /* class selectors */
+
+     }
+     footer,span{
+         background-color: pink;
+         /* this is the example of the group selectors
+         that is selecting the mutiple selctors at a one time
+          */
+          /* this is the example of the css comments */
+     }
+     p{
+         border: 2px;
+         border-style: dashed;
+         border-color: green;
+     }
+     /* 
+     *{
+         this is the example of the universal selcetors it means that the property will be implemented
+         on the whole html code here
+         
+
+     }
+     */
+    </style>
+</head>s
+<body>
+    <h3> Css selectors </h3>
+    <p id="redelement" class="bgblue "> this is a simple paragraph to demonstrate css selectors</p>
+    <p id="greenelement" class="bgyellow"> this is a simple paragraph to demonstrate css selectors</p>
+    <div>
+        <p>this another example to demonstrate here</p>
+    </div>
+    <span>this is the example of the group selectors</span>
+    <footer>
+        hello everyone
+    </footer>
+
+    
+</body>
+</html>
