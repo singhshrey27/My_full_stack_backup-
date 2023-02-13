@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid green;
+            background-color: yellowgreen;
+            margin:auto;
+            width: 600px;
+            padding: 23px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            /* to remove the underline from the anchor clickable tag */
+        }
+        a:hover{
+            color :rgb(233, 16, 16);
+            /* on placing the mouse text changes the color  */
+            background-color: rgb(248, 244, 244);
+            
+        }
+        a:visited{
+            /* visited link will behave different like color changes */
+            color: yellow;
+        }
+        a:active{
+            background-color: rgb(6, 6, 216);
+            /* when we click it changes the color */
+        }
+        .btns{
+            background-color: aqua;
+            padding: 6px;
+            border: none;
+            /* to remove the border to give the same look */
+            cursor: pointer;
+            /* to provide the cursor on placing the mouse on the buttons */
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btns:hover{
+            color: blueviolet;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit minus aliquam porro perferendis. Dolorum a, cumque aut commodi itaque ipsam provident consectetur obcaecati delectus. Quisquam iure reprehenderit ipsam nisi quam veniam, placeat doloremque cum veritatis!</p>
+        <a href="https://google.com" class="btns">Read more</a>
+        <button class="btns">Contact us here</button>
+    </div>
+</body>
+</html>
