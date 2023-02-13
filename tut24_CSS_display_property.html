@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css display property</title>
+    <style>
+        header{
+            border: 2px solid green;
+        }
+       img{
+        display: block;
+        /* to convert it into an block element */
+         width: 100px;
+         margin: auto;
+       }
+       h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0px;
+        text-align: center;
+        font-size: small;
+       }
+       /* width can be set only in block elments as it takes whole block and front space while an inline elment takes only the required space(it's size) */
+       .box{
+        border: 4px solid black;
+        background-color: grey;
+        padding: 15px;
+        box-sizing: border-box;
+        /* only total width of the box */
+        display: inline-block;
+        /* it is inline and block also in which width can be given */
+        width: 33%;
+
+       }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://media.istockphoto.com/id/1176439818/photo/making-a-memory.jpg?s=612x612&w=is&k=20&c=YyA_0rKQwabdxEQEDUiHq1YD5v40lATF0hol8FVXIws=" alter="error 404">
+
+        <h3>Welcome to Shrey's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum temporibus cupiditate, maiores, quos provident ducimus quisquam esse rerum reprehenderit laudantium modi minima reiciendis odio nesciunt saepe magni quasi? Nostrum tenetur omnis hic exercitationem culpa labore?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum temporibus cupiditate, maiores, quos provident ducimus quisquam esse rerum reprehenderit laudantium modi minima reiciendis odio nesciunt saepe magni quasi? Nostrum tenetur omnis hic exercitationem culpa labore?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum temporibus cupiditate, maiores, quos provident ducimus quisquam esse rerum reprehenderit laudantium modi minima reiciendis odio nesciunt saepe magni quasi? Nostrum tenetur omnis hic exercitationem culpa labore?</p>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
