@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Strings</title>
+</head>
+<body>
+   <div class="container">
+    <h1>Hello here dealing with the strings</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias neque, sequi amet ea ipsa, dolorem iure fuga nulla, non tempore minima nesciunt eum sint deleniti?</p>
+   </div> 
+   <script>
+    var string="ThisIsString";
+    //strings can also be declared single qoute
+    //In case we want a double qoute in between the string then use the single qoute Eg: 'Th"is'
+     
+    var name="shrey";
+    var message="shrey is a good boy";
+    console.log(name+" "+ message);
+    //This concatenate the strings
+
+    var channel="youtube channel";
+    var temp=`${name} is a nice person and he has ${channel}`;
+    //It can be used to fill the blank area place with the string
+    //It is called as the template literal
+
+    var len=name.length;
+    console.log(`Length of name is ${len}`);
+    
+    //Escape sequence characters
+    //  \n for the new line and \t for 4 space
+    console.log("this is\n shrey\tlearning")
+    ;
+    var str=new String("this");
+    console.log(str);
+    //strings can also be created using constructor(but preferred to create using normally)
+
+   </script>
+</body>
+</html>
