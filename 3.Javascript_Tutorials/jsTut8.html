@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js- Interactio using alert ,confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        <h1>hello this a alert box</h1>
+    </div>
+    <script>
+        //Alert box:
+        //Alert in In-browser javascript,it popups in web page(it does not return anything only ok can be done )
+        //alert("This is a alert box");
+
+
+
+
+        //Prompt Box:
+       // let name=prompt("What is your name?","Guest");
+       // console.log(name);
+        //prompt is used to take the input from the user
+        //here guest is a default argument
+
+
+        //Confirm box:
+        let deletepost=confirm("Do you really want to delete this post");
+        //console.log(deletepost);
+        if(deletepost){
+            console.log("Your post has been deleted");
+        }
+        else{
+            console.log("Your post has not been deleted");
+        }
+        //true if user says ok otherwise false
+
+
+        //quiz:
+        let age=prompt("Enter your age");
+        if(age>=18){
+            console.log("You're allowed to vote");
+        }
+        else{
+            console.log("Not allowed to vote");
+        }
+
+         
+    </script>
+</body>
+</html>

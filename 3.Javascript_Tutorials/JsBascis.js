@@ -6,7 +6,7 @@
 //Also used in Ajax request (used to help in without loading the page made changes in it dynamically)
 //Js is also used to take the data to the server.
 //Js can used not only on browser but also on the server
-//Js can be used a client as well as server side language.
+//Js can be used a client as well as server side language.(nodejs on server side)
 
 //Brower -> Javascript -> executes the code
 //What In-Browser can do?

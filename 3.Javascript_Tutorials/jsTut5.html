@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Js tut4- Scope and conditionals statements</title>
 </head>
 <body>
-    
+    <!-- div>ul>li{Item-$}*5  (it will create 5 times this automatically) -->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var str1="This is a string";
+        var str1="This is string2";
+        console.log(str1);
+        //their scope is global,if we declare a var inside a function then it's scope will be inside only that function
+
+        let a="shrey";
+        //it is a method to declare a variable where it's scope is  block  level (just after it.).preferablly use let from now(block can be anything it maybe a if or a function)
+        {
+             let a="u";
+             //here it can be declared again as it's local for the block 
+             console.log(a);
+        }
+        console.log(a);
+        // let a="me"; => This will give the error as it was already declared
+
+
+        //Constants:
+        const x="This cannot be changed";
+        console.log(x);
+        //it will be fixed cannot be changed(use where it will not change throughout the program)
+        
+
+        //Conditional Statements:
+
+
+        let age=34;
+        if(age>18){
+            console.log("You can vote");
+        }
+        else if(age>18&&ag<25){
+            console.log("you can check here");
+        }
+        else{
+            console.log("You cannot vote");
+        }
+
+
+     //Switch case :
+     const cup=45;
+     switch (cup) {
+        case 4:
+            console.log("The value of the cup is 4");
+            break;
+            //if we don't apply the break then it'll run rest all statements (it's a property of the switch statement)
+     
+        default:
+            console.log("The values of cups are non of the above");
+            break;
+     }
+
+    </script>
 </body>
 </html>
