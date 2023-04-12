@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="contianer">
+        <h1>hello these are loops tutorial</h1>
+    </div>
+    <script>
+        console.log("This is loop tutorial");
+        let i=0;
+        for(i=0;i<3;i++){
+            console.log(i);
+        }
+
+        //Can be used to iterate the array and objects as well
+        let friends=["shrey","monu","vikku","sachin"];
+        for(let index=0;index<friends.length;index++){
+          let element=friends[index];
+          console.log(element);  
+        }
+
+        //foreach loop
+        friends.forEach(function f(element){
+            console.log("hello friend , "+element)
+        });
+        //this is a morden js method to print the array element
+
+        //for of loop
+        for(element of friends){
+            console.log("hello friend , "+element)
+        }
+
+        //Iterating the object
+        let employee={
+            name:"shrey",
+            salary:2,
+            channel:"car",
+        }
+        //for in loop: use this loop to iterate over objects in javascript
+        for (key in employee){
+            console.log(`The ${key} of employee is ${employee [key]}`);
+            //here $ is used to print the blank value
+        }
+
+        //while loop in js
+        let index=0;
+        while(index<3){
+            console.log(index);
+        }
+         
+        //do while loop in js
+        do{
+            console.log(index);
+
+        }while(index<4);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div class="container" >
+        <h1>Another classs</h1>
+    </div>
+    <div class="containers" id="main">
+        <ul>
+            <li>Home</li>
+            <li>services</li>
+            <li>contact</li>
+            <li>more about us</li>
+        </ul>
+    </div>
+    <script>
+        let main=document.getElementById('main');
+        console.log(main);
+        //items can be accessed
+
+        let containers=document.getElementsByClassName('containers');
+        console.log(containers);
+        //It can return more than one class names and can contains
+
+        //To use the selector
+        let sel=document.querySelector('.container');
+        console.log("Selector returns the div which is associated with it ",sel);
+        //All CSS selectors can be used here by id,class,pseudo,universal
+
+        //Queryselector all
+        let sells=document.querySelectorAll('#main');
+        console.log(sells);
+
+        //sel[0].innertHtml
+
+    </script>
+</body>
+</html>
